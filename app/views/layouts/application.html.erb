@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Geeksnearyou</title>
+  <title>Geeks Near You</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD6WnEvdhkBh8DQV46lR-zl1yAeF1IT_YQ&sensor=true"></script>
   <%= csrf_meta_tags %>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
 </head>
-<body>
+<body onload="initialize()">
 
 <%= yield %>
 
